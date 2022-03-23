@@ -2275,7 +2275,6 @@ aside .news-letter hr {
 
 .contact-page-section .contact-list li {
 	display: flex;
-	flex-flow: row wrap;
 	margin-bottom: 3.125em;
 }
 
@@ -2300,6 +2299,9 @@ aside .news-letter hr {
 
 .map-section {
 	margin-bottom: -7px;
+}
+.map-section iframe{
+	width: 100%;
 }
 
 /*======================
@@ -2350,10 +2352,11 @@ aside .news-letter hr {
 	margin-bottom: 2.5em;
 }
 
-.about-upper-section .our-story svg {
+.about-upper-section .our-story img {
 	/*color: #1f4271;*/
 	/*font-size: 2.5rem;*/
 	margin-right: 20px;
+	display: inline-block;
 }
 
 /*For none link text use p-tag*/
@@ -3502,6 +3505,25 @@ RESPONSIVE STYLESHEET
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+}
+.what-other-say .container .customer-item .stars{
+	display: flex;
+	justify-content: center;
+
+}
+.what-other-say .container .customer-item .stars .starBox .star-yellow {
+	display: none;
+}
+.what-other-say .container .customer-item .stars .starBox.active .star-yellow {
+	display: block;
+}
+.what-other-say .container .customer-item .stars .starBox.active .star-gray {
+	display: none;
+}
+.what-other-say .container .customer-item .stars img{
+	width: 20px;
+	margin: 0 2px;
+
 }
 
 .what-other-say .container .customer-item .rateYo {

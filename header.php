@@ -51,14 +51,14 @@
 			<!-- Top header Close -->
 			<div class="main-header">
 				<div class="container">
-					<div class="logo-wrap" itemprop="logo">
+					<a href="<?php echo get_site_url(); ?>" class="logo-wrap" itemprop="logo">
 						<img src="<?php echo ASSETS ?>images/site-logo.jpg" alt="Logo Image">
 						<!-- <h1>Education</h1> -->
-					</div>
+					</a>
 					<div class="nav-wrap">
 						<nav class="nav-desktop">
 							<ul class="menu-list">
-								<li><a href="#">Home</a></li>
+								<li><a href="<?php echo get_site_url(); ?>">Home</a></li>
 								<li class="menu-parent">Courses
 									<ul class="sub-menu">
 										<li><a href="#">Child</a></li>
@@ -77,9 +77,9 @@
 										<li><a href="#">Child</a></li>
 									</ul>
 								</li>
-								<li><a href="">About</a></li>
+								<li><a href="<?php echo get_permalink(9); ?>"><?php echo get_the_title(9); ?></a></li>
 								<li><a href="">Gallery</a></li>
-								<li><a href="">Contact</a></li>
+								<li><a href="<?php echo get_permalink(7); ?>"><?php echo get_the_title(7); ?></a></li>
 							</ul>
 						</nav>
 						<div id="bar">
